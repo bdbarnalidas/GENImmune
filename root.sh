@@ -21,7 +21,7 @@
 
 # Discotope-2.0 - Default threshold is -3.7.
 
-# Ellipro - Predicts both linear and discontinuous epitopes. Default minimum score is 0.5. Default maximum distance in Angstroms is 6. 
+# Ellipro - Predicts both linear and discontinuous epitopes. Default minimum score is 0.5. Default maximum distance in Angstroms is 6. Generates both linear and discontinuous epitopes.
 
 ###########################################################################                     Bash script to execute the entire pipeline  
 #!/bin/bash
