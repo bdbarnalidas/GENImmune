@@ -1,0 +1,2005 @@
+1657622845101	geckodriver	INFO	Listening on 127.0.0.1:42547
+1657622845610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "45509" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEth4dy"
+*** You are running in headless mode.
+1657622846035	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.837615) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEth4dy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45509/devtools/browser/1f49dbc1-3f45-4170-a6ca-3ede9aec815b
+1657622846870	Marionette	INFO	Listening on port 37247
+1657622846921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657622863560	Marionette	INFO	Stopped listening on port 37247
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657622863750	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657624219796	geckodriver	INFO	Listening on 127.0.0.1:42323
+1657624219831	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "40083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCkFX0K"
+*** You are running in headless mode.
+1657624220275	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.882351) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCkFX0K/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40083/devtools/browser/5bc41b42-d2f7-48f1-a7ee-54fb381a3cd2
+1657624221169	Marionette	INFO	Listening on port 34915
+1657624221242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657624237279	Marionette	INFO	Stopped listening on port 34915
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657624237470	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657624445430	geckodriver	INFO	Listening on 127.0.0.1:40213
+1657624445465	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60915" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0gjvdT"
+*** You are running in headless mode.
+1657624445893	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.844394) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0gjvdT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60915/devtools/browser/ee82c178-c4ec-419d-a3be-e2ab6bbaceae
+1657624446736	Marionette	INFO	Listening on port 38263
+1657624446775	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657624461632	Marionette	INFO	Stopped listening on port 38263
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1657624461824	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657626746304	geckodriver	INFO	Listening on 127.0.0.1:41417
+1657626746340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledcHxq3"
+*** You are running in headless mode.
+1657626746766	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.842475) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledcHxq3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60721/devtools/browser/37951a1e-1d6b-4c7d-9bd7-bcaa9074772b
+1657626747621	Marionette	INFO	Listening on port 33675
+1657626747650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657626763747	Marionette	INFO	Stopped listening on port 33675
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657626763938	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657626907500	geckodriver	INFO	Listening on 127.0.0.1:44583
+1657626907535	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36537" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile47RRyd"
+*** You are running in headless mode.
+1657626907961	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.841841) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile47RRyd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36537/devtools/browser/93deb5b0-acd5-4b65-a42d-cc9986f921ee
+1657626908812	Marionette	INFO	Listening on port 35271
+1657626908846	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657626925235	Marionette	INFO	Stopped listening on port 35271
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657626925426	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657626995186	geckodriver	INFO	Listening on 127.0.0.1:49137
+1657626995221	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "45653" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletkFw4u"
+*** You are running in headless mode.
+1657626995718	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.909914) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletkFw4u/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45653/devtools/browser/7debd727-4c8e-4e38-821f-45bc589b38aa
+1657626996537	Marionette	INFO	Listening on port 42105
+1657626996631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657627011810	Marionette	INFO	Stopped listening on port 42105
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657627012000	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657627012049	geckodriver	INFO	Listening on 127.0.0.1:44943
+1657627012083	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "45083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileplqAJJ"
+*** You are running in headless mode.
+1657627012504	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835252) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileplqAJJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45083/devtools/browser/3e1be25c-ee1e-4284-b8ab-22a1208dae67
+1657627013341	Marionette	INFO	Listening on port 39341
+1657627013393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657627209182	Marionette	INFO	Stopped listening on port 39341
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657627209254	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657786546326	geckodriver	INFO	Listening on 127.0.0.1:44655
+1657786546657	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEFgxG2"
+*** You are running in headless mode.
+1657786547085	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.845913) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEFgxG2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41889/devtools/browser/2b5c6200-543f-4385-a034-fcd20ed40c72
+1657786547938	Marionette	INFO	Listening on port 34085
+1657786547968	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657786554481	Marionette	INFO	Stopped listening on port 34085
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657786554674	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657786554720	geckodriver	INFO	Listening on 127.0.0.1:57207
+1657786554756	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36585" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletOeGA8"
+*** You are running in headless mode.
+1657786555187	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.848227) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletOeGA8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36585/devtools/browser/e809f649-6ece-44f3-b960-6fada4a5677a
+1657786556029	Marionette	INFO	Listening on port 43183
+1657786556066	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657786565262	Marionette	INFO	Stopped listening on port 43183
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657786565455	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657786636528	geckodriver	INFO	Listening on 127.0.0.1:57103
+1657786636566	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53913" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileV7iOHe"
+*** You are running in headless mode.
+1657786636996	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.848321) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileV7iOHe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53913/devtools/browser/7fa70003-dd06-47e1-86b3-5647db53f67b
+1657786637855	Marionette	INFO	Listening on port 33725
+1657786637877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657786647063	Marionette	INFO	Stopped listening on port 33725
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657786647260	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657787643742	geckodriver	INFO	Listening on 127.0.0.1:48241
+1657787643784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48731" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexAVIek"
+*** You are running in headless mode.
+1657787644212	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.845635) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexAVIek/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48731/devtools/browser/0939bc3f-e780-4cdc-9d5d-7831251901ed
+1657787645055	Marionette	INFO	Listening on port 45431
+1657787645095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657787652939	Marionette	INFO	Stopped listening on port 45431
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657787653131	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657787917184	geckodriver	INFO	Listening on 127.0.0.1:39749
+1657787917219	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "52301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenFiPml"
+*** You are running in headless mode.
+1657787917659	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.873705) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenFiPml/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52301/devtools/browser/012b4956-c280-43de-93a8-b73e99407199
+1657787918525	Marionette	INFO	Listening on port 41691
+1657787918630	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657787924992	Marionette	INFO	Stopped listening on port 41691
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657787925187	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657787991500	geckodriver	INFO	Listening on 127.0.0.1:49049
+1657787991537	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55887" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejZMyGH"
+*** You are running in headless mode.
+1657787991976	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.857028) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejZMyGH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55887/devtools/browser/9ed3547b-7433-427e-91f8-58960aab218c
+1657787992796	Marionette	INFO	Listening on port 45439
+1657787992848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657787999184	Marionette	INFO	Stopped listening on port 45439
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657787999376	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657787999423	geckodriver	INFO	Listening on 127.0.0.1:37719
+1657787999458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60569" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileH1uClY"
+*** You are running in headless mode.
+1657787999886	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.843284) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH1uClY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60569/devtools/browser/ab48b7a1-0419-4a5e-8a15-c9a104ead9f6
+1657788000730	Marionette	INFO	Listening on port 39589
+1657788000769	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657788010247	Marionette	INFO	Stopped listening on port 39589
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657788010441	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657793112005	geckodriver	INFO	Listening on 127.0.0.1:33711
+1657793112042	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55193" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileuw3Qvx"
+*** You are running in headless mode.
+1657793112469	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.841495) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuw3Qvx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55193/devtools/browser/35bc25e1-898f-427c-845a-d49bd608c887
+1657793113306	Marionette	INFO	Listening on port 41559
+1657793113352	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657793119113	Marionette	INFO	Stopped listening on port 41559
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657793119304	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657793119394	geckodriver	INFO	Listening on 127.0.0.1:47487
+1657793119430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "34653" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMlI6If"
+*** You are running in headless mode.
+1657793119856	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.840945) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMlI6If/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:34653/devtools/browser/c8cdb3ac-41ba-4181-a38b-c612864f55e2
+1657793120693	Marionette	INFO	Listening on port 45105
+1657793120741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657793130639	Marionette	INFO	Stopped listening on port 45105
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657793130834	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657793927007	geckodriver	INFO	Listening on 127.0.0.1:42045
+1657793927043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47449" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRrkq3x"
+*** You are running in headless mode.
+1657793927464	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.837775) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRrkq3x/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47449/devtools/browser/e6ddf8ae-47a7-4a9e-a436-1474809d6314
+1657793928298	Marionette	INFO	Listening on port 43127
+1657793928353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657793935116	Marionette	INFO	Stopped listening on port 43127
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657793935309	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657794037422	geckodriver	INFO	Listening on 127.0.0.1:51669
+1657794037458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "37987" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileswsfrk"
+*** You are running in headless mode.
+1657794037881	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.837176) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileswsfrk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37987/devtools/browser/e3dcd248-9089-40df-9f87-1103aa45d769
+1657794038718	Marionette	INFO	Listening on port 37121
+1657794038769	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657794044829	Marionette	INFO	Stopped listening on port 37121
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657794045019	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798020651	geckodriver	INFO	Listening on 127.0.0.1:48617
+1657798020687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "56759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilep4A7iY"
+*** You are running in headless mode.
+1657798021130	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.863437) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilep4A7iY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56759/devtools/browser/50e43e44-4231-47e9-88f1-3936e65c852e
+1657798022003	Marionette	INFO	Listening on port 33553
+1657798022098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798029933	Marionette	INFO	Stopped listening on port 33553
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798030129	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798123853	geckodriver	INFO	Listening on 127.0.0.1:49875
+1657798123888	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47883" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileteqGI8"
+*** You are running in headless mode.
+1657798124321	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.849608) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileteqGI8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47883/devtools/browser/3618a417-9165-43b6-a8e0-7e348b2ba8df
+1657798125177	Marionette	INFO	Listening on port 43917
+1657798125209	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798162032	Marionette	INFO	Stopped listening on port 43917
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798162225	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798407179	geckodriver	INFO	Listening on 127.0.0.1:59979
+1657798407216	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42937" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDyO5eg"
+*** You are running in headless mode.
+1657798407644	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.843278) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDyO5eg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42937/devtools/browser/801b500b-3353-462d-9d8e-454e938c50ef
+1657798408487	Marionette	INFO	Listening on port 40721
+1657798408527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657798450151	geckodriver	INFO	Listening on 127.0.0.1:43307
+1657798450187	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42635" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileM0MUHK"
+*** You are running in headless mode.
+1657798450615	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.843989) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileM0MUHK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42635/devtools/browser/3804648c-a211-4850-b1fe-730960dc27a9
+1657798451457	Marionette	INFO	Listening on port 42581
+1657798451498	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798458152	Marionette	INFO	Stopped listening on port 42581
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798458345	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798458395	geckodriver	INFO	Listening on 127.0.0.1:55591
+1657798458431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38569" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFxzcbM"
+*** You are running in headless mode.
+1657798458866	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.845098) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFxzcbM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38569/devtools/browser/306fda3e-8bff-4725-bf7a-34d269a1d063
+1657798459711	Marionette	INFO	Listening on port 34283
+1657798459742	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657798646142	geckodriver	INFO	Listening on 127.0.0.1:57647
+1657798646180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39875" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilef46m1k"
+*** You are running in headless mode.
+1657798646612	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.847471) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef46m1k/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39875/devtools/browser/4fcea8c5-9101-4ac7-9a1e-60a405b88721
+1657798647449	Marionette	INFO	Listening on port 41437
+1657798647491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798658532	Marionette	INFO	Stopped listening on port 41437
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798658723	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798658778	geckodriver	INFO	Listening on 127.0.0.1:33661
+1657798658813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "37943" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCCTbbV"
+*** You are running in headless mode.
+1657798659248	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.852303) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCCTbbV/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37943/devtools/browser/63b4bd12-8c12-4e00-8a7c-ff92d3b7d94e
+1657798660101	Marionette	INFO	Listening on port 33717
+1657798660125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798669683	Marionette	INFO	Stopped listening on port 33717
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798669876	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798720651	geckodriver	INFO	Listening on 127.0.0.1:37463
+1657798720686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59527" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFQLZbr"
+*** You are running in headless mode.
+1657798721119	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.85023) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFQLZbr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59527/devtools/browser/3010a397-6b77-4e4b-aa29-902e95bbdd65
+1657798721972	Marionette	INFO	Listening on port 41051
+1657798721997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798745834	Marionette	INFO	Stopped listening on port 41051
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798746029	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657798746081	geckodriver	INFO	Listening on 127.0.0.1:48869
+1657798746115	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35611" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileho2hAt"
+*** You are running in headless mode.
+1657798746550	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.854358) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileho2hAt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35611/devtools/browser/2f8c3fef-41d4-4757-ae80-f340d9addbd2
+1657798747398	Marionette	INFO	Listening on port 36949
+1657798747426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657798765992	Marionette	INFO	Stopped listening on port 36949
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657798766184	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657799618163	geckodriver	INFO	Listening on 127.0.0.1:43041
+1657799618199	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "40599" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJeA771"
+*** You are running in headless mode.
+1657799618629	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.847305) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJeA771/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40599/devtools/browser/95e1973d-47e2-4a7f-bde3-48cf61a0a9e0
+1657799619480	Marionette	INFO	Listening on port 37019
+1657799619510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657799638586	Marionette	INFO	Stopped listening on port 37019
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657799638779	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657799638842	geckodriver	INFO	Listening on 127.0.0.1:42309
+1657799638865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46781" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVWRvP2"
+*** You are running in headless mode.
+1657799639300	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.849777) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVWRvP2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46781/devtools/browser/0d57a841-29d1-486f-8df2-b60730a6e04e
+1657799640142	Marionette	INFO	Listening on port 44649
+1657799640176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657799915111	geckodriver	INFO	Listening on 127.0.0.1:39067
+1657799915147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41599" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewSrZQY"
+*** You are running in headless mode.
+1657799915594	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.868854) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewSrZQY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41599/devtools/browser/84eaac4f-465a-4e98-85e2-bbaa08a0e853
+1657799916468	Marionette	INFO	Listening on port 36375
+1657799916559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657799934473	Marionette	INFO	Stopped listening on port 36375
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657799934670	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1657799934724	geckodriver	INFO	Listening on 127.0.0.1:40785
+1657799934759	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46865" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYxWsMV"
+*** You are running in headless mode.
+1657799935205	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.884492) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYxWsMV/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46865/devtools/browser/1a9d3460-b51e-4482-bf4d-2bc61f15f4ec
+1657799936101	Marionette	INFO	Listening on port 35227
+1657799936170	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1657800120017	Marionette	INFO	Stopped listening on port 35227
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1657800120093	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659966167115	geckodriver	INFO	Listening on 127.0.0.1:57551
+1659966167651	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50815" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileM36Zsu"
+*** You are running in headless mode.
+1659966168080	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.84299) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileM36Zsu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50815/devtools/browser/7afe3385-c152-4088-b76b-45c9ef51c33f
+1659966168913	Marionette	INFO	Listening on port 40093
+1659966168963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659966174803	Marionette	INFO	Stopped listening on port 40093
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659966175001	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659966175041	geckodriver	INFO	Listening on 127.0.0.1:57185
+1659966175562	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42963" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileV8u74k"
+*** You are running in headless mode.
+1659966175989	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.842387) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileV8u74k/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42963/devtools/browser/d8d755e1-1de7-466a-b4ff-8c6ab6dcf30e
+1659966176832	Marionette	INFO	Listening on port 32901
+1659966176873	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659966182248	Marionette	INFO	Stopped listening on port 32901
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659966182442	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659968611805	geckodriver	INFO	Listening on 127.0.0.1:51645
+1659968611839	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35555" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileiTX84z"
+*** You are running in headless mode.
+1659968612261	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835027) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiTX84z/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35555/devtools/browser/6d385c45-48db-479c-a610-c6817c109691
+1659968613096	Marionette	INFO	Listening on port 46565
+1659968613150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968759213	geckodriver	INFO	Listening on 127.0.0.1:55487
+1659968759249	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "44037" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile86JZdw"
+*** You are running in headless mode.
+1659968759691	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.86392) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile86JZdw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44037/devtools/browser/af413be1-f7ea-4286-b619-bd2eecfeb1e5
+1659968760565	Marionette	INFO	Listening on port 41319
+1659968760660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968790548	geckodriver	INFO	Listening on 127.0.0.1:50331
+1659968790582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59545" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOX2Wlu"
+*** You are running in headless mode.
+1659968791006	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838023) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOX2Wlu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59545/devtools/browser/1626b79b-10d5-47a6-96bc-e69d7af5128f
+1659968791843	Marionette	INFO	Listening on port 44939
+1659968791893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968796477	Marionette	INFO	Stopped listening on port 44939
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659968796669	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659968796715	geckodriver	INFO	Listening on 127.0.0.1:44599
+1659968796749	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59079" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenyM0pi"
+*** You are running in headless mode.
+1659968797175	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.843817) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenyM0pi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59079/devtools/browser/33cd6ff3-5f72-4533-92c2-7f813f253fe5
+1659968798014	Marionette	INFO	Listening on port 44171
+1659968798060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968804440	Marionette	INFO	Stopped listening on port 44171
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659968804632	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659968974459	geckodriver	INFO	Listening on 127.0.0.1:45429
+1659968974494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47603" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevDlTIl"
+*** You are running in headless mode.
+1659968974919	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.840234) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevDlTIl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47603/devtools/browser/4d3c5849-b962-4fb1-b850-2b5874b08401
+1659968975756	Marionette	INFO	Listening on port 33995
+1659968975805	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968980215	Marionette	INFO	Stopped listening on port 33995
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659968980407	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659968980450	geckodriver	INFO	Listening on 127.0.0.1:51719
+1659968980484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50825" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBtTNMz"
+*** You are running in headless mode.
+1659968980908	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.836762) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBtTNMz/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50825/devtools/browser/499ffeb9-25f8-49c7-849c-9659303508c3
+1659968981745	Marionette	INFO	Listening on port 32785
+1659968981795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659968988452	Marionette	INFO	Stopped listening on port 32785
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659968988643	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659969077300	geckodriver	INFO	Listening on 127.0.0.1:33847
+1659969077334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqFOYDx"
+*** You are running in headless mode.
+1659969077755	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835301) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqFOYDx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39583/devtools/browser/dc47658c-713f-4eda-9a67-8f4bfc5db2ff
+1659969078558	Marionette	INFO	Listening on port 33363
+1659969078644	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659969083490	Marionette	INFO	Stopped listening on port 33363
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659969083683	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659969083728	geckodriver	INFO	Listening on 127.0.0.1:35529
+1659969083762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "56829" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHB5inh"
+*** You are running in headless mode.
+1659969084185	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.837945) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHB5inh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56829/devtools/browser/d05af9d9-f036-441a-98e6-811ab724c4f9
+1659969085025	Marionette	INFO	Listening on port 39793
+1659969085073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659969090581	Marionette	INFO	Stopped listening on port 39793
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659969090772	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659969823403	geckodriver	INFO	Listening on 127.0.0.1:51637
+1659969823437	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38577" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletf6YjH"
+*** You are running in headless mode.
+1659969823856	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.850006) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletf6YjH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38577/devtools/browser/9c12e79c-b833-473c-9f91-f44af2a57000
+1659969824726	Marionette	INFO	Listening on port 46451
+1659969824747	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659969829243	Marionette	INFO	Stopped listening on port 46451
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659969829435	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659969829478	geckodriver	INFO	Listening on 127.0.0.1:47317
+1659969829512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35775" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegYCUDf"
+*** You are running in headless mode.
+1659969829934	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.837842) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegYCUDf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35775/devtools/browser/03e65e65-95cf-4444-8f65-55f701417340
+1659969830789	Marionette	INFO	Listening on port 44969
+1659969830823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659969837269	Marionette	INFO	Stopped listening on port 44969
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659969837462	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659971480936	geckodriver	INFO	Listening on 127.0.0.1:34081
+1659971480970	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55243" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletRJSzW"
+*** You are running in headless mode.
+1659971481395	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.831234) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletRJSzW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55243/devtools/browser/278423ad-5a2b-4477-864f-0abd26a3a61e
+1659971482235	Marionette	INFO	Listening on port 34637
+1659971482281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659971487571	Marionette	INFO	Stopped listening on port 34637
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659971487761	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659971487806	geckodriver	INFO	Listening on 127.0.0.1:54963
+1659971487840	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55965" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile78F5hT"
+*** You are running in headless mode.
+1659971488261	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.833198) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile78F5hT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55965/devtools/browser/08f9e42b-8f8e-48ea-a666-4ca92e62b74a
+1659971489108	Marionette	INFO	Listening on port 33933
+1659971489151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659971494770	Marionette	INFO	Stopped listening on port 33933
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659971494959	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659971796577	geckodriver	INFO	Listening on 127.0.0.1:35575
+1659971796611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39371" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1pjWOQ"
+*** You are running in headless mode.
+1659971797170	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.978548) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1pjWOQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39371/devtools/browser/d8e9851d-8363-4926-a2b6-2a55c7fb1c24
+1659971798027	Marionette	INFO	Listening on port 33731
+1659971798121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659971802511	Marionette	INFO	Stopped listening on port 33731
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1659971802704	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1659971802746	geckodriver	INFO	Listening on 127.0.0.1:52385
+1659971803279	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53373" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLO3NX5"
+*** You are running in headless mode.
+1659971803700	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.833997) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLO3NX5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53373/devtools/browser/b30ba4f7-5492-4231-a639-01671d253209
+1659971804537	Marionette	INFO	Listening on port 45759
+1659971804589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1659971810766	Marionette	INFO	Stopped listening on port 45759
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1659971810961	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037524498	geckodriver	INFO	Listening on 127.0.0.1:37553
+1660037524533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60361" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7NEt5C"
+*** You are running in headless mode.
+1660037524951	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.833285) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7NEt5C/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60361/devtools/browser/2cb00cef-71ad-45fe-b419-f13ac0fa3dec
+1660037525805	Marionette	INFO	Listening on port 41253
+1660037525844	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660037530548	Marionette	INFO	Stopped listening on port 41253
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1660037530747	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037559282	geckodriver	INFO	Listening on 127.0.0.1:60705
+1660037559317	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile39o1tN"
+*** You are running in headless mode.
+1660037559739	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.8339) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile39o1tN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42113/devtools/browser/f22d4879-a47a-4f43-a232-910db4dc71b9
+1660037560573	Marionette	INFO	Listening on port 42341
+1660037560627	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660037565096	Marionette	INFO	Stopped listening on port 42341
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660037565287	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037565336	geckodriver	INFO	Listening on 127.0.0.1:51977
+1660037565370	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53023" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWVBpkZ"
+*** You are running in headless mode.
+1660037565788	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.821698) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWVBpkZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53023/devtools/browser/a341ddc8-f4df-47ca-882e-936ddae969dc
+1660037566627	Marionette	INFO	Listening on port 42533
+1660037566680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660037572837	Marionette	INFO	Stopped listening on port 42533
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660037573032	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037624851	geckodriver	INFO	Listening on 127.0.0.1:41565
+1660037624886	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGlCGqW"
+*** You are running in headless mode.
+1660037625307	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.832526) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGlCGqW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35799/devtools/browser/8eb16e0c-3bb5-429c-94d1-a5cb274bb604
+1660037626138	Marionette	INFO	Listening on port 43553
+1660037626196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660037630892	Marionette	INFO	Stopped listening on port 43553
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660037631085	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037631135	geckodriver	INFO	Listening on 127.0.0.1:50127
+1660037631170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41675" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWQ4VmR"
+*** You are running in headless mode.
+1660037631594	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.866383) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWQ4VmR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41675/devtools/browser/732c6f57-0817-4450-b325-aed8c00f0d63
+1660037632427	Marionette	INFO	Listening on port 39799
+1660037632480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660037639101	Marionette	INFO	Stopped listening on port 39799
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660037639292	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660037942022	geckodriver	INFO	Listening on 127.0.0.1:54021
+1660037942056	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42329" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAMOS8e"
+*** You are running in headless mode.
+1660037942473	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.830195) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAMOS8e/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42329/devtools/browser/6754831a-c1d4-4863-89a0-359c3fea2f70
+1660037943309	Marionette	INFO	Listening on port 43451
+1660037943366	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1660038015916	geckodriver	INFO	Listening on 127.0.0.1:57509
+1660038015950	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39269" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileW0ASPI"
+*** You are running in headless mode.
+1660038016369	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.830988) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileW0ASPI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39269/devtools/browser/0a4dfc3e-1afa-497a-8ad7-8ecddec88336
+1660038017173	Marionette	INFO	Listening on port 41413
+1660038017260	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660038021929	Marionette	INFO	Stopped listening on port 41413
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660038022130	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660038022170	geckodriver	INFO	Listening on 127.0.0.1:40261
+1660038022204	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42977" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4EHx6b"
+*** You are running in headless mode.
+1660038022645	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.863207) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4EHx6b/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42977/devtools/browser/27f5b9f3-2f5e-4f61-9cbc-ce9ca3ca8ee1
+1660038023519	Marionette	INFO	Listening on port 45911
+1660038023615	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660038029791	Marionette	INFO	Stopped listening on port 45911
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000C,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660038029989	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660038617989	geckodriver	INFO	Listening on 127.0.0.1:50799
+1660038618024	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevsbH3M"
+*** You are running in headless mode.
+1660038618445	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.834955) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevsbH3M/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46647/devtools/browser/1e71d067-2547-4343-a322-1a20c8760e1b
+1660038619281	Marionette	INFO	Listening on port 40157
+1660038619334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660038624415	Marionette	INFO	Stopped listening on port 40157
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+!!! error running onStopped callback: TypeError: callback is not a function
+1660038624607	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660038624658	geckodriver	INFO	Listening on 127.0.0.1:54415
+1660038624692	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "52821" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNSe3qf"
+*** You are running in headless mode.
+1660038625108	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.829946) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNSe3qf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52821/devtools/browser/68fd2759-3a26-475a-9734-149b3604741b
+1660038625960	Marionette	INFO	Listening on port 33753
+1660038626002	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660039061506	geckodriver	INFO	Listening on 127.0.0.1:52521
+1660039061540	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "43181" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3FqyDs"
+*** You are running in headless mode.
+1660039061962	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835108) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3FqyDs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43181/devtools/browser/952d572e-c7c6-47c9-b952-6a9d2b52abba
+1660039062810	Marionette	INFO	Listening on port 45325
+1660039062850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660039067708	Marionette	INFO	Stopped listening on port 45325
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1660039067906	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660039067953	geckodriver	INFO	Listening on 127.0.0.1:41013
+1660039068486	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "34399" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebNt2af"
+*** You are running in headless mode.
+1660039068903	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.830448) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebNt2af/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:34399/devtools/browser/bd8a0e40-c3f8-4088-bbb9-02a720e4a6ef
+1660039069741	Marionette	INFO	Listening on port 33321
+1660039069796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660039240911	geckodriver	INFO	Listening on 127.0.0.1:57147
+1660039240945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLgdgj5"
+*** You are running in headless mode.
+1660039241363	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.832806) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLgdgj5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48799/devtools/browser/b9428e91-9cda-4d50-9e75-63fdf799559f
+1660039242196	Marionette	INFO	Listening on port 37845
+1660039242256	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660039246748	Marionette	INFO	Stopped listening on port 37845
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660039246943	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660039246989	geckodriver	INFO	Listening on 127.0.0.1:48069
+1660039247023	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36635" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2iNjlD"
+*** You are running in headless mode.
+1660039247452	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.844954) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2iNjlD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36635/devtools/browser/e02fa151-8475-4594-aa14-8afee9516831
+1660039248302	Marionette	INFO	Listening on port 40557
+1660039248333	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660039254959	Marionette	INFO	Stopped listening on port 40557
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660039255150	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041292598	geckodriver	INFO	Listening on 127.0.0.1:53039
+1660041292632	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "51249" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejBWLPt"
+*** You are running in headless mode.
+1660041293056	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.83645) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejBWLPt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51249/devtools/browser/aa93fa06-b96a-4fba-8121-de79b58b5713
+1660041293893	Marionette	INFO	Listening on port 41879
+1660041293942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041779686	geckodriver	INFO	Listening on 127.0.0.1:40907
+1660041779721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38105" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqybiSP"
+*** You are running in headless mode.
+1660041780139	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.832117) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqybiSP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38105/devtools/browser/df474dab-189e-4570-bf54-5dbed439a6ff
+1660041780975	Marionette	INFO	Listening on port 44493
+1660041781031	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041785499	Marionette	INFO	Stopped listening on port 44493
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041785691	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041785739	geckodriver	INFO	Listening on 127.0.0.1:36545
+1660041785762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39019" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileROIc0n"
+*** You are running in headless mode.
+1660041786184	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.836603) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileROIc0n/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39019/devtools/browser/e62da4a4-1b82-4673-9b85-2f839e4b0bbd
+1660041787021	Marionette	INFO	Listening on port 46125
+1660041787073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041793852	Marionette	INFO	Stopped listening on port 46125
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041794047	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041828226	geckodriver	INFO	Listening on 127.0.0.1:38515
+1660041828262	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "58667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWDVeYn"
+*** You are running in headless mode.
+1660041828683	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835273) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWDVeYn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58667/devtools/browser/2831de2d-c082-48fd-a3ee-df1822c725a1
+1660041829499	Marionette	INFO	Listening on port 40115
+1660041829573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041834159	Marionette	INFO	Stopped listening on port 40115
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041834349	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041834398	geckodriver	INFO	Listening on 127.0.0.1:38191
+1660041834433	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "36479" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenfmTfG"
+*** You are running in headless mode.
+1660041834857	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838842) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenfmTfG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36479/devtools/browser/27b1f9ed-9c00-4015-82aa-b92d7c7dd69e
+1660041835689	Marionette	INFO	Listening on port 44101
+1660041835744	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041841521	Marionette	INFO	Stopped listening on port 44101
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041841718	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041972825	geckodriver	INFO	Listening on 127.0.0.1:41361
+1660041972860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41215" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFv7wRw"
+*** You are running in headless mode.
+1660041973283	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835582) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFv7wRw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41215/devtools/browser/d4617474-a1bd-4f16-a851-866a4d731581
+1660041974118	Marionette	INFO	Listening on port 37791
+1660041974170	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041979765	Marionette	INFO	Stopped listening on port 37791
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041979960	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660041980009	geckodriver	INFO	Listening on 127.0.0.1:33827
+1660041980043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59565" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledTbpjc"
+*** You are running in headless mode.
+1660041980464	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.836181) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledTbpjc/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59565/devtools/browser/74d2ca7c-06eb-490e-9604-4487017067e2
+1660041981271	Marionette	INFO	Listening on port 42165
+1660041981353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660041988240	Marionette	INFO	Stopped listening on port 42165
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660041988431	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042126320	geckodriver	INFO	Listening on 127.0.0.1:45321
+1660042126355	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "37841" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecL2Ow2"
+*** You are running in headless mode.
+1660042126777	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838908) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecL2Ow2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37841/devtools/browser/96d349bc-7e1f-4ff9-aef1-a7a0f15887bc
+1660042127629	Marionette	INFO	Listening on port 44425
+1660042127666	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042132177	Marionette	INFO	Stopped listening on port 44425
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042132375	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042132423	geckodriver	INFO	Listening on 127.0.0.1:55093
+1660042132459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "56763" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqHx2IL"
+*** You are running in headless mode.
+1660042132889	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.84594) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqHx2IL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56763/devtools/browser/91972be5-5906-4c27-b8a5-4b5620039690
+1660042133693	Marionette	INFO	Listening on port 43005
+1660042133770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042206825	geckodriver	INFO	Listening on 127.0.0.1:45645
+1660042206860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60523" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVNkyMj"
+*** You are running in headless mode.
+1660042207288	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.841964) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVNkyMj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60523/devtools/browser/53e95330-6413-4483-a6b8-bb3836264f9b
+1660042208103	Marionette	INFO	Listening on port 38041
+1660042208171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042213794	Marionette	INFO	Stopped listening on port 38041
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042213984	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042214035	geckodriver	INFO	Listening on 127.0.0.1:33325
+1660042214071	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "35145" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileklTkaS"
+*** You are running in headless mode.
+1660042214494	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.836295) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileklTkaS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35145/devtools/browser/973e6fdd-8341-409a-b2b8-d2a3125f5bff
+1660042215347	Marionette	INFO	Listening on port 33311
+1660042215382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042292081	geckodriver	INFO	Listening on 127.0.0.1:42631
+1660042292116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "58349" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0ZOp34"
+*** You are running in headless mode.
+1660042292537	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.835535) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0ZOp34/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58349/devtools/browser/577a85c9-f74f-423f-9893-1479b2a442b8
+1660042293374	Marionette	INFO	Listening on port 45639
+1660042293427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042298139	Marionette	INFO	Stopped listening on port 45639
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042298333	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042298383	geckodriver	INFO	Listening on 127.0.0.1:33473
+1660042298904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55567" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIAW2Su"
+*** You are running in headless mode.
+1660042299327	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838561) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIAW2Su/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55567/devtools/browser/b6c78679-a688-4370-b997-d5fec37e7900
+1660042300168	Marionette	INFO	Listening on port 35409
+1660042300215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042343378	geckodriver	INFO	Listening on 127.0.0.1:60037
+1660042343413	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42791" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileeury8J"
+*** You are running in headless mode.
+1660042343839	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.841158) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeury8J/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42791/devtools/browser/3601bc4b-a202-4078-9050-6c759c594164
+1660042344675	Marionette	INFO	Listening on port 39689
+1660042344723	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042350192	Marionette	INFO	Stopped listening on port 39689
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042350383	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042350435	geckodriver	INFO	Listening on 127.0.0.1:49117
+1660042350470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53903" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQSyO28"
+*** You are running in headless mode.
+1660042350893	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838887) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQSyO28/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53903/devtools/browser/d08f8fd6-aa2d-4ffb-a935-29140c01b1a0
+1660042351702	Marionette	INFO	Listening on port 35379
+1660042351781	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042358665	Marionette	INFO	Stopped listening on port 35379
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042358855	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042396824	geckodriver	INFO	Listening on 127.0.0.1:48359
+1660042396858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "57613" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7mBWJ4"
+*** You are running in headless mode.
+1660042397286	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.844865) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7mBWJ4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57613/devtools/browser/a2e571ae-4ade-44d7-a970-6e509a459538
+1660042398128	Marionette	INFO	Listening on port 34699
+1660042398168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042403587	Marionette	INFO	Stopped listening on port 34699
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042403784	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042403832	geckodriver	INFO	Listening on 127.0.0.1:48115
+1660042403866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "40479" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilee751WV"
+*** You are running in headless mode.
+1660042404299	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.847411) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilee751WV/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40479/devtools/browser/c7c9fc53-b03a-41a7-b864-adb09e1d9df8
+1660042405140	Marionette	INFO	Listening on port 35679
+1660042405176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042411456	Marionette	INFO	Stopped listening on port 35679
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042411652	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042648675	geckodriver	INFO	Listening on 127.0.0.1:58825
+1660042648709	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50777" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8rqC8L"
+*** You are running in headless mode.
+1660042649161	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.873527) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8rqC8L/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50777/devtools/browser/f1c611c7-81a7-405d-9d55-89bcd13750a4
+1660042650021	Marionette	INFO	Listening on port 41109
+1660042650120	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042654971	Marionette	INFO	Stopped listening on port 41109
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1660042655167	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042655212	geckodriver	INFO	Listening on 127.0.0.1:43601
+1660042655247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "56423" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilen7rJRi"
+*** You are running in headless mode.
+1660042655678	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.85094) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilen7rJRi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56423/devtools/browser/d11baae7-8ca5-4a7f-8fdd-0841692264f7
+1660042656550	Marionette	INFO	Listening on port 46749
+1660042656658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042663023	Marionette	INFO	Stopped listening on port 46749
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042663215	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042703028	geckodriver	INFO	Listening on 127.0.0.1:36523
+1660042703064	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38319" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilerewNQG"
+*** You are running in headless mode.
+1660042703487	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838659) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerewNQG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38319/devtools/browser/3f644ffe-a96a-4e7c-9024-44bfb81847f6
+1660042704325	Marionette	INFO	Listening on port 43919
+1660042704375	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042709243	Marionette	INFO	Stopped listening on port 43919
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042709437	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660042709486	geckodriver	INFO	Listening on 127.0.0.1:60593
+1660042709521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53401" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebOlmD8"
+*** You are running in headless mode.
+1660042709945	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.83959) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebOlmD8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53401/devtools/browser/931e5011-cc47-4253-9157-9be2af454d3c
+1660042710788	Marionette	INFO	Listening on port 46219
+1660042710832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660042716656	Marionette	INFO	Stopped listening on port 46219
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660042716850	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045237540	geckodriver	INFO	Listening on 127.0.0.1:35533
+1660045237582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "33369" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileg6eal0"
+*** You are running in headless mode.
+1660045238010	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.842771) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileg6eal0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33369/devtools/browser/c575a09f-7ab4-401c-ba63-a3952503e5b8
+1660045238850	Marionette	INFO	Listening on port 35471
+1660045238893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045244883	Marionette	INFO	Stopped listening on port 35471
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045245076	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045245127	geckodriver	INFO	Listening on 127.0.0.1:33727
+1660045245161	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42697" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXThjb5"
+*** You are running in headless mode.
+1660045245592	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.848577) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXThjb5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42697/devtools/browser/08a652b9-ab94-4cbd-b35f-4b5b8ec35bcc
+1660045246428	Marionette	INFO	Listening on port 37973
+1660045246472	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045255656	Marionette	INFO	Stopped listening on port 37973
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045255849	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045261202	geckodriver	INFO	Listening on 127.0.0.1:57677
+1660045261238	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "43581" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTCf9WR"
+*** You are running in headless mode.
+1660045261661	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.838537) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTCf9WR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43581/devtools/browser/3cfb7be2-3a90-43f4-82f0-b0aab8ef4f28
+1660045262501	Marionette	INFO	Listening on port 42085
+1660045262549	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045277820	Marionette	INFO	Stopped listening on port 42085
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045278011	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045278073	geckodriver	INFO	Listening on 127.0.0.1:54915
+1660045278107	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47109" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFVYX8V"
+*** You are running in headless mode.
+1660045278534	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.84243) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFVYX8V/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47109/devtools/browser/ba37f698-e9d3-4f71-abe0-00cb7edbf142
+1660045279374	Marionette	INFO	Listening on port 45765
+1660045279417	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045467937	Marionette	INFO	Stopped listening on port 45765
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045468009	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045473407	geckodriver	INFO	Listening on 127.0.0.1:57369
+1660045473442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55787" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDRzXPg"
+*** You are running in headless mode.
+1660045473886	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.883846) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDRzXPg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55787/devtools/browser/f19f5120-0a69-48ce-ba4f-030c684e8822
+1660045474781	Marionette	INFO	Listening on port 34137
+1660045474853	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045479339	Marionette	INFO	Stopped listening on port 34137
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000C,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045479541	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1660045479582	geckodriver	INFO	Listening on 127.0.0.1:44357
+1660045479617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48567" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemzGvC6"
+*** You are running in headless mode.
+1660045480062	Marionette	INFO	Marionette enabled
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=0.884935) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemzGvC6/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48567/devtools/browser/74f2d6dc-ad28-45f0-8a7a-a3fdae068e22
+1660045480959	Marionette	INFO	Listening on port 46719
+1660045481028	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+JavaScript error: http://tools.iedb.org/static/js/sequence_validation.js, line 89: TypeError: document.querySelector(...) is null
+1660045487543	Marionette	INFO	Stopped listening on port 46719
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1660045487749	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
