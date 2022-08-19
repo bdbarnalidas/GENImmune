@@ -7,6 +7,7 @@ from Bio import SeqIO
 from io import StringIO
 import numpy as np
 import iedb
+import re
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -1105,3 +1106,465 @@ def run_ellipro():
 		print("\n\n------------------- Ellipro executed successfully for Protein " + str(pdb[m]) + " -----------------\n\n")
 		linear_epitopes.clear()
 		discontinous_epitopes.clear()
+
+###########################################################################                     Run MSA with input as UniProt accession numbers
+def run_msa(matrix='bl62', gapopen=1.53, gapext=0.123, order='aligned', nbtree=2, treeout='true', maxiterate=2, ffts='none'): 
+	data = get_data_from_file('MSA')
+	print(data)
+	seq_string = ''
+	for i in data:
+		seq_string = seq_string + 'sp:' + i + ','
+	seq_string = seq_string[:-1]
+	print(seq_string)
+	os.system(
+		'python3.9 msa_algos/mafft.py --email barnali.das@tum.de --stype protein --sequence ' + seq_string + ' --outfile MSA/MAFFT/mafft --format fasta --matrix ' + matrix + ' --gapopen ' + str(gapopen) + ' --gapext ' + str(gapext) 
+		+ ' --order ' + order + ' --nbtree ' + str(nbtree) + ' --treeout ' + treeout + ' --maxiterate ' + str(maxiterate) + ' --ffts ' + ffts)
+	os.system(
+		'python3.9 msa_algos/muscle.py --email barnali.das@tum.de --sequence ' + seq_string + ' --outfile MSA/MUSCLE/muscle --format fasta')
+
+###########################################################################                     Run GBlocks to extract the conserved sequences from the MSA
+def run_gblocks(path_to_file, folder, min_seq_conserved_pos='default', min_seq_flank_pos='default', max_contigous_nonconserved_pos = 8, min_length_block= 10, allowed_gap_pos='None'):
+	options = Options()
+	options.headless = True
+	gblocks_url = 'https://ngphylogeny.fr/tools/tool/276/form'
+	driver = webdriver.Firefox(options=options, executable_path = './geckodriver')
+	driver.maximize_window()
+	driver.get(gblocks_url)
+	upload_file = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[1]/div/input")
+	upload_file.send_keys(path_to_file)
+	data_type = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[2]/div[1]/div/select")
+	data_type.send_keys('Protein')
+	b1 = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[3]/div/input")
+	b1.clear()
+	b1.send_keys(min_seq_conserved_pos)
+	b2 = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[4]/div/input")
+	b2.clear()
+	b2.send_keys(min_seq_flank_pos)
+	b3 = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[5]/div/input")
+	b3.clear()
+	b3.send_keys(max_contigous_nonconserved_pos)
+	b4 = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[6]/div/input")
+	b4.clear()
+	b4.send_keys(min_length_block)
+	b5 = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/fieldset/div/div/div[7]/div/select")
+	b5.send_keys(allowed_gap_pos)
+	submit = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/div/div/form/input")
+	submit.click()
+	wait = WebDriverWait(driver, 180)
+	wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div/div[1]/div/div/div[6]/div/table/tbody/tr[2]/td[5]/a[5]")))
+	sequence_info_html = driver.find_element(By.XPATH, "/html/body/div/div[1]/div/div/div[6]/div/table/tbody/tr[2]/td[5]/a[5]")
+	sequence_info_html.click()
+	wait.until(ec.visibility_of_element_located(
+		(By.XPATH, "/html/body/div/div[1]/div[2]/pre/pre[3]/b[1]")))
+	positions = driver.find_element(By.XPATH, '/html/body/div/div[1]/div[2]/pre/pre[3]').get_attribute("innerHTML").splitlines()[1]
+	positions = positions[8:]
+	list_positions = [int(s) for s in re.findall(r'\d+', positions)]
+	driver.execute_script("window.history.go(-1)")
+	wait.until(ec.visibility_of_element_located(
+		(By.XPATH, "/html/body/div/div[1]/div/div/div[6]/div/table/tbody/tr[3]/td[4]/a[5]")))
+	cleaned_sequences_fasta = driver.find_element(By.XPATH, "/html/body/div/div[1]/div/div/div[6]/div/table/tbody/tr[3]/td[4]/a[5]")
+	cleaned_sequences_fasta.click()
+	wait.until(ec.visibility_of_element_located(
+		(By.XPATH, "/html/body/div/div[1]/div[2]/pre")))
+	cleaned_seq = driver.find_element(By.XPATH, '/html/body/div/div[1]/div[2]/pre').text
+	cleaned_seq_list = cleaned_seq.split('>')
+	cleaned_seq_list.pop(0)
+	conserved_sequences_dictionary = {}
+	for i in range(len(cleaned_seq_list)):
+		lines = cleaned_seq_list[i].splitlines()
+		protein_id = lines[0].split(' ')[1]
+		cleaned_fasta_all = ''.join(lines[1:])
+		list_of_fasta = []
+		for i in range(1, len(list_positions), 2):
+			cut_point = list_positions[i] - list_positions[i - 1] + 1
+			cons_seq = cleaned_fasta_all[:cut_point]
+			list_of_fasta.append(cons_seq)
+			cleaned_fasta_all = cleaned_fasta_all[cut_point:]
+		conserved_sequences_dictionary[protein_id] = list_of_fasta
+	driver.close()
+	file_write = folder + 'gblocks_conserved_sequences.txt'
+	fp = open(file_write,'w')
+	for key, value in conserved_sequences_dictionary.items(): 
+		fp.write('%s:%s\n' % (key, value))
+	print(conserved_sequences_dictionary)
+	fp.close()
+
+###########################################################################                     Run Bebipred with input as conserved subsequences of MSA
+def run_bebipred_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'Bebipred/Detailed_'
+	output_file = folder + 'Bebipred/Output_'
+	fronturl = 'curl --data "method=Bepipred&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	count = 1
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Bebipred for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		position = []
+		residue = []
+		l = 0
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & (tabs[3] == 'E'):
+				flag = 1
+				l = l + 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & (tabs[3] == 'E'):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & (tabs[3] == '.'):
+				flag = 0
+				string = ''.join(residue)
+				fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+				position.clear()
+				residue.clear()
+		time.sleep(3) # Bebipred fails sometimes for batch job submission
+		fp_write.close()
+		print('\n\n-------------------Bebipred executed successfully for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		count = count + 1
+
+###########################################################################                     Run Chou & Fasman with input as conserved subsequences of MSA
+def run_choufasman_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'ChouFasman/Detailed_'
+	output_file = folder + 'ChouFasman/Output_'
+	fronturl = 'curl --data "method=Chou-Fasman&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	count = 1
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Chou-Fasman for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\t' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		del lines[0]
+		total = 0
+		count = 0
+		for j in range(0,len(lines)):
+			count = count + 1
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			total = total + float(tabs[5])
+		threshold = total/count
+		# print(threshold)
+		position = []
+		residue = []
+		l = 1
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & ((float(tabs[5])) >=  threshold): 
+				flag = 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) >= threshold):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) < threshold):
+				if (len(position) >= 7): # default window size
+					flag = 0
+					string = ''.join(residue)
+					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+					l = l + 1
+					position.clear()
+					residue.clear()
+				else:
+					flag = 0
+					position.clear()
+					residue.clear()
+		fp_write.close()
+		print('\n\n-------------------Chou-Fasman executed successfully for ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+
+###########################################################################                     Run Emini with input as conserved subsequences of MSA
+def run_emini_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'Emini/Detailed_'
+	output_file = folder + 'Emini/Output_'
+	fronturl = 'curl --data "method=Emini&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Emini for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		# print(result)
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		del lines[0]
+		position = []
+		residue = []
+		l = 1
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & ((float(tabs[5])) >= 1):
+				flag = 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) >= 1):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) < 1):
+				if (len(position) >= 6): # default window size
+					flag = 0
+					string = ''.join(residue)
+					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+					l = l + 1
+					position.clear()
+					residue.clear()
+				else:
+					flag = 0
+					position.clear()
+					residue.clear()
+		fp_write.close()
+		print('\n\n-------------------Emini executed successfully for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+
+###########################################################################                     Run Parker with input as conserved subsequences of MSA
+def run_parker_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'Parker/Detailed_'
+	output_file = folder + 'Parker/Output_'
+	fronturl = 'curl --data "method=Parker&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	count = 1
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Parker for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\t' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		del lines[0]
+		total = 0
+		count = 0
+		for j in range(0,len(lines)):
+			count = count + 1
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			total = total + float(tabs[5])
+		threshold = total/count
+		print(threshold)
+		position = []
+		residue = []
+		l = 1
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & ((float(tabs[5])) >=  threshold): 
+				flag = 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) >= threshold):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) < threshold):
+				if (len(position) >= 7): # default window size
+					flag = 0
+					string = ''.join(residue)
+					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+					l = l + 1
+					position.clear()
+					residue.clear()
+				else:
+					flag = 0
+					position.clear()
+					residue.clear()
+		fp_write.close()
+		print('\n\n-------------------Parker executed successfully for ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+
+###########################################################################                     Run Karplus-Schulz with input as conserved subsequences of MSA
+def run_karplusschulz_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'KarplusSchulz/Detailed_'
+	output_file = folder + 'KarplusSchulz/Output_'
+	fronturl = 'curl --data "method=Karplus-Schulz&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	count = 1
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Karplus-Schulz for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\t' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		del lines[0]
+		total = 0
+		count = 0
+		for j in range(0,len(lines)):
+			count = count + 1
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			total = total + float(tabs[5])
+		threshold = total/count
+		# print(threshold)
+		position = []
+		residue = []
+		l = 1
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & ((float(tabs[5])) >=  threshold): 
+				flag = 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) >= threshold):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) < threshold):
+				if (len(position) >= 7): # default window size
+					flag = 0
+					string = ''.join(residue)
+					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+					l = l + 1
+					position.clear()
+					residue.clear()
+				else:
+					flag = 0
+					position.clear()
+					residue.clear()
+		fp_write.close()
+		print('\n\n-------------------Karplus-Schulz executed successfully for ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+
+###########################################################################                     Run Kolaskar-Tongaonkar with input as conserved subsequences of MSA
+def run_kolaskartongaonkar_msa(swissprot, data, folder):
+	detailed_output_file = folder + 'KolaskarTongaonkar/Detailed_'
+	output_file = folder + 'KolaskarTongaonkar/Output_'
+	fronturl = 'curl --data "method=Kolaskar-Tongaonkar&sequence_text='
+	backurl = '" http://tools-cluster-interface.iedb.org/tools_api/bcell/'
+	count = 1
+	for i in range(0,len(data)):
+		print('\n\n-------------------Running Kolaskar-Tongaonkar for Protein ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+		url = fronturl + data[i] + backurl
+		# print(url)
+		result = os.popen(url).read()
+		output_file_1 = detailed_output_file + swissprot + '_' + data[i] + '.tsv'
+		output_file_2 = output_file + swissprot + '_' + data[i] + '.tsv'
+		fp_write_1 = open(output_file_1,'w')
+		for line in result.splitlines():
+			# print(line)
+			fp_write_1.write(line)
+			fp_write_1.write('\n')
+		fp_write_1.close()
+		fp_write = open(output_file_2,'w')
+		fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\t' + '\n')
+		with open(output_file_1) as fp:
+			lines = fp.readlines()
+		del lines[0]
+		total = 0
+		count = 0
+		for j in range(0,len(lines)):
+			count = count + 1
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			total = total + float(tabs[5])
+		threshold = total/count
+		# print(threshold)
+		position = []
+		residue = []
+		l = 1
+		flag = 0
+		for j in range(0, len(lines)):
+			ln = lines[j].replace('\n','')
+			tabs = ln.split('\t')
+			if (flag == 0) & ((float(tabs[5])) >=  threshold): 
+				flag = 1
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) >= threshold):
+				position.append(tabs[0])
+				residue.append(tabs[1])
+			elif (flag == 1) & ((float(tabs[5])) < threshold):
+				if (len(position) >= 7): # default window size
+					flag = 0
+					string = ''.join(residue)
+					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+					l = l + 1
+					position.clear()
+					residue.clear()
+				else:
+					flag = 0
+					position.clear()
+					residue.clear()
+		fp_write.close()
+		print('\n\n-------------------Kolaskar-Tongaonkar executed successfully for ' + str(swissprot) + ' for conserved subsequence-' + str(data[i]) + '-----------------\n\n')
+
+###########################################################################                     Reading the conserved sequences from file and predicting the linear epitopes from them
+def run_conserved_sequences(file, folder):
+	fp_read = open(file,'r')
+	for ln in fp_read:
+		ln = ln.replace(':',',')
+		ln = ln.replace('[','')
+		ln = ln.replace(']','')
+		ln = ln.replace('\n','')
+		ln = ln.replace('\'','')
+		tabs = ln.split(',')
+		swissprot = tabs[0]
+		tabs.pop(0)
+		tabs = [x.strip(' ') for x in tabs]
+		print(swissprot)
+		print(tabs)
+		run_bebipred_msa(swissprot,tabs,folder)
+		run_choufasman_msa(swissprot,tabs,folder)
+		run_emini_msa(swissprot,tabs,folder)
+		run_parker_msa(swissprot,tabs,folder)
+		run_karplusschulz_msa(swissprot,tabs,folder)
+		run_kolaskartongaonkar_msa(swissprot,tabs,folder)
+		tabs.clear()
+	fp_read.close()
