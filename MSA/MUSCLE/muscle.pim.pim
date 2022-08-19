@@ -1,0 +1,10 @@
+#
+#
+#  Percent Identity  Matrix - created by Clustal2.1 
+#
+#
+
+     1: UNIPROT_SPIKE_SARS2  100.00   77.66   31.88   32.83
+     2: UNIPROT_SPIKE_SARS    77.66  100.00   32.75   33.31
+     3: UNIPROT_SPIKE_CVMA5   31.88   32.75  100.00   66.36
+     4: UNIPROT_SPIKE_CVHOC   32.83   33.31   66.36  100.00

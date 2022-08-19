@@ -1,0 +1,69 @@
+<execution>
+  <commandLine>singularity exec -B $PWD:/output /nfs/public/ro/es_codon/appbin/linux-x86_64/singularity/mafft:7.487 /mafft/bin/mafft --thread 8 --anysymbol --bl 62 --op 1.53 --ep 0.123 --reorder --retree 2 --treeout --maxiterate 2 --amino mafft-R20220819-104640-0632-93192423-p1m.sequence</commandLine>
+  <userParameters class="linked-hash-map">
+    <entry>
+      <string>program</string>
+      <string>mafft</string>
+    </entry>
+    <entry>
+      <string>format</string>
+      <string>fasta</string>
+    </entry>
+    <entry>
+      <string>matrix</string>
+      <string>bl62</string>
+    </entry>
+    <entry>
+      <string>gapopen</string>
+      <float>1.53</float>
+    </entry>
+    <entry>
+      <string>gapext</string>
+      <float>0.123</float>
+    </entry>
+    <entry>
+      <string>order</string>
+      <string>aligned</string>
+    </entry>
+    <entry>
+      <string>nbtree</string>
+      <int>2</int>
+    </entry>
+    <entry>
+      <string>treeout</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>maxiterate</string>
+      <int>2</int>
+    </entry>
+    <entry>
+      <string>ffts</string>
+      <string>none</string>
+    </entry>
+    <entry>
+      <string>stype</string>
+      <string>protein</string>
+    </entry>
+    <entry>
+      <string>sequence</string>
+      <string>/nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/jobs/mafft/rest/20220819/1046/mafft-R20220819-104640-0632-93192423-p1m.sequence</string>
+    </entry>
+  </userParameters>
+  <outputLocation>file:/nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/jobs/mafft/rest/20220819/1046//mafft-R20220819-104640-0632-93192423-p1m.output</outputLocation>
+  <errorLocation>file:/nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/jobs/mafft/rest/20220819/1046//mafft-R20220819-104640-0632-93192423-p1m.error</errorLocation>
+  <toolId>mafft</toolId>
+  <jobId>mafft-R20220819-104640-0632-93192423-p1m</jobId>
+  <email>barnali.das@tum.de</email>
+  <emailNotification>false</emailNotification>
+  <clientId>138.246.3.122</clientId>
+  <executionContext>rest</executionContext>
+  <additionalProperties class="uk.ac.ebi.properties.commonsconfiguration.CommonsConfigurationPropertiesContainer">
+    <property key="postprocessor.class">uk.ac.ebi.jdispatcher.execution.domain.service.AdditionalExecutionPostProcessor</property>
+    <property key="postprocessor.properties.input_suffix">output</property>
+    <property key="postprocessor.properties.output_suffix">output.ph</property>
+    <property key="postprocessor.properties.additional_command">/nfs/public/ro/es_codon/appbin/linux-x86_64/clustalw-2.1/bin/clustalw2 -infile=input -tree -outputtree=phylip -pim</property>
+    <property key="command">sh /nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/resources/management/scripts/remoteExecution.sh &quot;prod&quot; /nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/resources/services-hh-wp-prod.properties ${tool.id} ${job.id} ${host.id} /nfs/public/rw/es/projects/wp-jdispatcher/sources/prod/lib/jdispatcher-execution-1.0-SNAPSHOT-jar-with-dependencies.jar</property>
+    <property key="parameter.excludes">sequence, upfile, asequence, aupfile, bsequence, bupfile, program, version</property>
+  </additionalProperties>
+</execution>

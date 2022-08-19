@@ -1,0 +1,7 @@
+Position	Residue	Start	End	Peptide	Score
+3	S	1	6	LFSVYI	0.722
+4	V	2	7	FSVYIG	0.867
+5	Y	3	8	SVYIGD	1.671
+6	I	4	9	VYIGDI	0.874
+7	G	5	10	YIGDIL	0.971
+8	D	6	11	IGDILT	0.895

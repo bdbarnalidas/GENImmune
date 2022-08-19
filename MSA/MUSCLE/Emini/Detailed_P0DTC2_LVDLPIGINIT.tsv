@@ -1,0 +1,7 @@
+Position	Residue	Start	End	Peptide	Score
+3	D	1	6	LVDLPI	0.965
+4	L	2	7	VDLPIG	1.158
+5	P	3	8	DLPIGI	1.094
+6	I	4	9	LPIGIN	1.053
+7	G	5	10	PIGINI	0.895
+8	I	6	11	IGINIT	0.835

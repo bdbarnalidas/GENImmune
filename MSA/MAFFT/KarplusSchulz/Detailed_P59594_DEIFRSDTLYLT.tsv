@@ -1,0 +1,6 @@
+Position	Residue	Start	End	Peptide	Score
+4	F	1	7	DEIFRSD	0.993
+5	R	2	8	EIFRSDT	1.018
+6	S	3	9	IFRSDTL	1.04
+7	D	4	10	FRSDTLY	1.032
+8	T	5	11	RSDTLYL	1.012
