@@ -23,6 +23,10 @@
 
 # Ellipro - Predicts both linear and discontinuous epitopes. Default minimum score is 0.5. Default maximum distance in Angstroms is 6. 
 
+# MSA - Uses REST API services from https://www.ebi.ac.uk/ to output alignment files using the multiple sequence alignment methods "MAFFT" and "MUSCLE".
+
+# GBlocks - Gblocks NGPhylogeny website.
+
 ###########################################################################                     Bash script to execute the entire pipeline  
 #!/bin/bash
 
@@ -188,7 +192,28 @@ function direct_prediction
 ###########################################################################                     Predicting epitopes from the conserved sequences of MSA
 function prediction_from_msa
 {
-	echo "Inside function 2";
+    printf '\n------------------------------------------------------------------------ Multiple Sequence Alignment using MUSCLE and MAFFT -------------------------------------------------------------------------------------------------------------\n\n';
+    printf 'Please type the UniProt IDs in file MSA/Input.txt. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
+    printf 'Waiting for you to provide your inputs\n'
+    sleep 5s
+    python3.9 -c "import function_library; function_library.run_msa()"
+    printf '\n------------------------------------------------------------------------ Extracting conserved sequences of MUSCLE MSA using GBlocks -----------------------------------------------------------------------------------------------------\n\n';
+    pwd=$(pwd);
+    path="${pwd}/MSA/MUSCLE/muscle.aln-fasta.fasta"
+    python3.9 -c "import function_library; function_library.run_gblocks('${path}','MSA/MUSCLE/')"
+    printf '\n------------------------------------------------------------ Predicting linear epitopes from the conserved subsequences of MUSCLE MSA ---------------------------------------------------------------------------------------------------\n\n';
+    pwd=$(pwd);
+    path="${pwd}/MSA/MUSCLE/gblocks_conserved_sequences.txt"
+    python3.9 -c "import function_library; function_library.run_conserved_sequences('${path}','MSA/MUSCLE/')"
+    sleep 3s
+    printf '\n------------------------------------------------------------------------ Extracting conserved sequences of MAFFT MSA using GBlocks ------------------------------------------------------------------------------------------------------\n\n';
+    pwd=$(pwd);
+    path="${pwd}/MSA/MAFFT/mafft.aln-fasta.fasta"
+    python3.9 -c "import function_library; function_library.run_gblocks('${path}','MSA/MAFFT/')"
+    printf '\n------------------------------------------------------------ Predicting linear epitopes from the conserved subsequences of MAFFT MSA -----------------------------------------------------------------------------------------------------\n\n';
+    pwd=$(pwd);
+    path="${pwd}/MSA/MAFFT/gblocks_conserved_sequences.txt"
+    python3.9 -c "import function_library; function_library.run_conserved_sequences('${path}','MSA/MAFFT/')"
 }
 
 ###########################################################################                     Main menu
