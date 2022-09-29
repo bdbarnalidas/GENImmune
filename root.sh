@@ -27,6 +27,8 @@
 
 # GBlocks - Gblocks NGPhylogeny website.
 
+# MHC-I - IEDB recommended. 
+
 ###########################################################################                     Bash script to execute the entire pipeline  
 #!/bin/bash
 
@@ -35,158 +37,245 @@ function direct_prediction
 {
     printf '\n----------------------------------------------------------------------------------- Predicting linear epitopes from protein sequences  ---------------------------------------------------------------------------------------------\n\n';
 	printf '\n-------------------------------------------------------------------------------------------------------- Bebipred ------------------------------------------------------------------------------------------------------------------\n';
-	printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Bebipred/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-    printf 'Waiting for you to provide your inputs\n'
-    sleep 5s
-    printf 'Have you provided your inputs? Then please do the following:\n'
-    sleep 2s
-    printf 'Please press 1 if you are entering Swiss-Prot IDs in the input file\n'
-    printf 'Please press 2 if you are entering protein sequences in fasta format in the input file\n'
-    echo "Your choice is: "
+    printf 'Do you want to execute Bebipred? If yes, please press Y or else press N\n'
     read choice
-    if [ $choice -eq  1 ]; 
+    if [ "$choice" =  "Y" ]; 
     then
-        python3.9 -c "import function_library; function_library.run_bebipred_swissprot()"
+    	printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Bebipred/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+        printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
+        printf 'Waiting for you to provide your inputs\n'
+        sleep 5s
+        printf 'Have you provided your inputs? Then please do the following:\n'
+        sleep 2s
+        printf 'Please press 1 if you are entering Swiss-Prot IDs in the input file\n'
+        printf 'Please press 2 if you are entering protein sequences in fasta format in the input file\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_bebipred_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_bebipred_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_bebipred_sequence()"
+        continue
     fi
 
     printf '\n-------------------------------------------------------------------------------------------------------- Chou & Fasman -------------------------------------------------------------------------------------------------------------\n';
-    echo "Do you want to run Chou & Fasman for the same input file? If yes, please press Y or else press N.";
+    printf 'Do you want to execute Chou & Fasman? If yes, please press Y or else press N\n'
     read choice
     if [ "$choice" =  "Y" ]; 
-    then 
-        cp Bebipred/Input.txt ChouFasman/Input.txt
-    else
-        printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file ChouFasman/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-        printf 'Waiting for you to provide your inputs\n'
-        sleep 5s
-        printf 'Have you provided your inputs? Then please do the following:\n'
-        sleep 2s
-    fi
-    printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
-    printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
-    echo "Your choice is: "
-    read choice
-    if [ $choice -eq  1 ]; 
     then
-        python3.9 -c "import function_library; function_library.run_choufasman_swissprot()"
+        echo "Do you want to run Chou & Fasman for the same input file as that of Bebipred? If yes, please press Y or else press N.";
+        read choice
+        if [ "$choice" =  "Y" ]; 
+        then 
+            cp Bebipred/Input.txt ChouFasman/Input.txt
+        else
+            printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file ChouFasman/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Waiting for you to provide your inputs\n'
+            sleep 5s
+            printf 'Have you provided your inputs? Then please do the following:\n'
+            sleep 2s
+        fi
+        printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
+        printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_choufasman_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_choufasman_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_choufasman_sequence()"
+        continue
     fi
 
     printf '\n-------------------------------------------------------------------------------------------------------- Emini ---------------------------------------------------------------------------------------------------------------------\n';
-    echo "Do you want to run Emini for the same input file? If yes, please press Y or else press N.";
+    printf 'Do you want to execute Emini? If yes, please press Y or else press N\n'
     read choice
     if [ "$choice" =  "Y" ]; 
-    then 
-        cp Bebipred/Input.txt Emini/Input.txt
-    else
-        printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Emini/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-        printf 'Waiting for you to provide your inputs\n'
-        sleep 5s
-        printf 'Have you provided your inputs? Then please do the following:\n'
-        sleep 2s
-    fi
-    printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
-    printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
-    echo "Your choice is: "
-    read choice
-    if [ $choice -eq  1 ]; 
     then
-        python3.9 -c "import function_library; function_library.run_emini_swissprot()"
+        echo "Do you want to run Emini for the same input file? If yes, please press Y or else press N.";
+        read choice
+        if [ "$choice" =  "Y" ]; 
+        then 
+            cp Bebipred/Input.txt Emini/Input.txt
+        else
+            printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Emini/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Waiting for you to provide your inputs\n'
+            sleep 5s
+            printf 'Have you provided your inputs? Then please do the following:\n'
+            sleep 2s
+        fi
+        printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
+        printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_emini_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_emini_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_emini_sequence()"
+        continue
     fi
 
     printf '\n-------------------------------------------------------------------------------------------------------- Karplus-Schulz --------------------------------------------------------------------------------------------------------------\n';
-    echo "Do you want to run Karplus-Schulz for the same input file? If yes, please press Y or else press N.";
+    printf 'Do you want to execute Karplus-Schulz? If yes, please press Y or else press N\n'
     read choice
     if [ "$choice" =  "Y" ]; 
-    then 
-        cp Bebipred/Input.txt KarplusSchulz/Input.txt
-    else
-        printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KarplusSchulz/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-        printf 'Waiting for you to provide your inputs\n'
-        sleep 5s
-        printf 'Have you provided your inputs? Then please do the following:\n'
-        sleep 2s
-    fi
-    printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
-    printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
-    echo "Your choice is: "
-    read choice
-    if [ $choice -eq  1 ]; 
     then
-        python3.9 -c "import function_library; function_library.run_karplusschulz_swissprot()"
+        echo "Do you want to run Karplus-Schulz for the same input file? If yes, please press Y or else press N.";
+        read choice
+        if [ "$choice" =  "Y" ]; 
+        then 
+            cp Bebipred/Input.txt KarplusSchulz/Input.txt
+        else
+            printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KarplusSchulz/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Waiting for you to provide your inputs\n'
+            sleep 5s
+            printf 'Have you provided your inputs? Then please do the following:\n'
+            sleep 2s
+        fi
+        printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
+        printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_karplusschulz_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_karplusschulz_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_karplusschulz_sequence()"
+        continue
     fi
 
     printf '\n-------------------------------------------------------------------------------------------------------- Kolaskar-Tongaonkar ---------------------------------------------------------------------------------------------------------\n';
-    echo "Do you want to run Kolaskar-Tongaonkar for the same input file? If yes, please press Y or else press N.";
+    printf 'Do you want to execute Kolaskar-Tongaonkar? If yes, please press Y or else press N\n'
     read choice
     if [ "$choice" =  "Y" ]; 
-    then 
-        cp Bebipred/Input.txt KolaskarTongaonkar/Input.txt
-    else
-        printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KolaskarTongaonkar/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-        printf 'Waiting for you to provide your inputs\n'
-        sleep 5s
-        printf 'Have you provided your inputs? Then please do the following:\n'
-        sleep 2s
-    fi
-    printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
-    printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
-    echo "Your choice is: "
-    read choice
-    if [ $choice -eq  1 ]; 
     then
-        python3.9 -c "import function_library; function_library.run_kolaskartongaonkar_swissprot()"
+        echo "Do you want to run Kolaskar-Tongaonkar for the same input file? If yes, please press Y or else press N.";
+        read choice
+        if [ "$choice" =  "Y" ]; 
+        then 
+            cp Bebipred/Input.txt KolaskarTongaonkar/Input.txt
+        else
+            printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KolaskarTongaonkar/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Waiting for you to provide your inputs\n'
+            sleep 5s
+            printf 'Have you provided your inputs? Then please do the following:\n'
+            sleep 2s
+        fi
+        printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
+        printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_kolaskartongaonkar_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_kolaskartongaonkar_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_kolaskartongaonkar_sequence()"
+        continue
     fi
 
     printf '\n-------------------------------------------------------------------------------------------------------- Parker-----------------------------------------------------------------------------------------------------------------------\n';
-    echo "Do you want to run Parker for the same input file? If yes, please press Y or else press N.";
+    printf 'Do you want to execute Parker? If yes, please press Y or else press N\n'
     read choice
     if [ "$choice" =  "Y" ]; 
-    then 
-        cp Bebipred/Input.txt Parker/Input.txt
-    else
-        printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Parker/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
-        printf 'Waiting for you to provide your inputs\n'
-        sleep 5s
-        printf 'Have you provided your inputs? Then please do the following:\n'
-        sleep 2s
-    fi
-    printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
-    printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
-    echo "Your choice is: "
-    read choice
-    if [ $choice -eq  1 ]; 
     then
-        python3.9 -c "import function_library; function_library.run_parker_swissprot()"
+        echo "Do you want to run Parker for the same input file? If yes, please press Y or else press N.";
+        read choice
+        if [ "$choice" =  "Y" ]; 
+        then 
+            cp Bebipred/Input.txt Parker/Input.txt
+        else
+            printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Parker/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Waiting for you to provide your inputs\n'
+            sleep 5s
+            printf 'Have you provided your inputs? Then please do the following:\n'
+            sleep 2s
+        fi
+        printf 'Please press 1 if the input file contains Swiss-Prot ids\n'
+        printf 'Please press 2 if the input file contains protein sequences in fasta format\n'
+        echo "Your choice is: "
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_parker_swissprot()"
+        else
+            python3.9 -c "import function_library; function_library.run_parker_sequence()"
+        fi
     else
-        python3.9 -c "import function_library; function_library.run_parker_sequence()"
+        continue
     fi
 
+    # printf '\n-------------------------------------------------------------------------------------------------------- MHC-I -----------------------------------------------------------------------------------------------------------------------\n';
+    # printf 'Please type the protein sequences in fasta format in the file MHC-I/Input.txt. In case of multiple entries, please place the sequences in separate lines without any blank lines in between them.\n'
+    # printf 'Waiting for you to provide your inputs\n'
+    # sleep 5s
+    # python3.9 -c "import function_library; function_library.run_mhci()"
+    
     printf '\n----------------------------------------------------------------------------------- Predicting discontinuous epitopes from protein structures ----------------------------------------------------------------------------------------\n\n';
     printf '\n-------------------------------------------------------------------------------------------------------- Discotope-1.1 -----------------------------------------------------------------------------------------------------------------\n';
-    printf 'Please type in file Discotope-1.1/Input.txt, firstly the PDB ID and then their corresponding chain id separated by a single space character. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
-    printf 'Waiting for you to provide your inputs\n'
-    sleep 5s
-    python3.9 -c "import function_library; function_library.run_discotope1()"
+    printf 'Do you want to execute Discotope-1.1? If yes, please press Y or else press N\n'
+    read choice
+    if [ "$choice" =  "Y" ]; 
+    then
+        printf 'Please type in file Discotope-1.1/Input.txt, firstly the PDB ID and then their corresponding chain id separated by a single space character. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
+        printf 'Waiting for you to provide your inputs\n'
+        sleep 5s
+        printf 'Have you provided your inputs? Then please type 1 and enter\n'
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_discotope1()"
+        fi
+    else
+        continue
+    fi
+
     printf '\n-------------------------------------------------------------------------------------------------------- Discotope-2.0 -----------------------------------------------------------------------------------------------------------------\n';
-    printf 'Please type in file Discotope-2.0/Input.txt, firstly the PDB ID and then their corresponding chain id separated by a single space character. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
-    printf 'Waiting for you to provide your inputs\n'
-    sleep 5s
-    python3.9 -c "import function_library; function_library.run_discotope2()"
+    printf 'Do you want to execute Discotope-2.0? If yes, please press Y or else press N\n'
+    read choice
+    if [ "$choice" =  "Y" ]; 
+    then
+        printf 'Please type in file Discotope-2.0/Input.txt, firstly the PDB ID and then their corresponding chain id separated by a single space character. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
+        printf 'Waiting for you to provide your inputs\n'
+        sleep 5s
+        printf 'Have you provided your inputs? Then please type 1 and enter\n'
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_discotope2()"
+        fi
+    else
+        continue
+    fi
+
     printf '\n---------------------------------------------------------------------------------------------------------- Ellipro -------------------------------------------------------------------------------------------------------------------\n\n';
-    printf 'Please type the PDB ids in file Ellipro/Input.txt. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
-    printf 'Waiting for you to provide your inputs\n'
-    sleep 5s
-    python3.9 -c "import function_library; function_library.run_ellipro()"
+    printf 'Do you want to execute Ellipro? If yes, please press Y or else press N\n'
+    read choice
+    if [ "$choice" =  "Y" ]; 
+    then
+        printf 'Please type the PDB ids in file Ellipro/Input.txt. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
+        printf 'Waiting for you to provide your inputs\n'
+        sleep 5s
+        printf 'Have you provided your inputs? Then please type 1 and enter\n'
+        read choice
+        if [ $choice -eq  1 ]; 
+        then
+            python3.9 -c "import function_library; function_library.run_ellipro()"
+        fi
+    else
+        continue
+    fi
 }                         
 
 ###########################################################################                     Predicting epitopes from the conserved sequences of MSA
@@ -196,7 +285,12 @@ function prediction_from_msa
     printf 'Please type the UniProt IDs in file MSA/Input.txt. In case of multiple entries, please place the inputs in separate lines without any blank lines in between them.\n'
     printf 'Waiting for you to provide your inputs\n'
     sleep 5s
-    python3.9 -c "import function_library; function_library.run_msa()"
+    printf 'Have you provided your inputs? Then please type 1 and enter\n'
+    read choice
+    if [ $choice -eq  1 ]; 
+    then
+        python3.9 -c "import function_library; function_library.run_msa()"
+    fi
     printf '\n------------------------------------------------------------------------ Extracting conserved sequences of MUSCLE MSA using GBlocks -----------------------------------------------------------------------------------------------------\n\n';
     pwd=$(pwd);
     path="${pwd}/MSA/MUSCLE/muscle.aln-fasta.fasta"

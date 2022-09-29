@@ -80,6 +80,19 @@ def process_fasta(folder_name):
 	# print(data)
 	return swissprot, data
 
+###########################################################################                     Get the list of alleles and lengths
+def process_allele_length(folder_name):
+	allele = []
+	length = []
+	filename = folder_name + '/allele_length.txt'
+	fp = open(filename,'r')
+	for ln in fp:
+		ln = ln.replace('\n','')
+		tabs = ln.split('\t')
+		allele.append(tabs[0])
+		length.append(tabs[1])
+	return allele, length
+
 ###########################################################################                     Run Bebipred with input as Swiss-Prot ids
 def run_bebipred_swissprot():
 	data = get_data_from_file('Bebipred')
@@ -128,6 +141,7 @@ def run_bebipred_swissprot():
 				residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Bebipred executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Bebipred with input as protein sequences
 def run_bebipred_sequence():
@@ -178,6 +192,8 @@ def run_bebipred_sequence():
 		fp_write.close()
 		print('\n\n-------------------Bebipred executed successfully for Protein ' + str(swissprot[i]) + '-----------------\n\n')
 		count = count + 1
+		time.sleep(5)
+
 
 ###########################################################################                     Run Chou & Fasman with input as Swiss-Prot ids
 def run_choufasman_swissprot():
@@ -243,6 +259,8 @@ def run_choufasman_swissprot():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Chou-Fasman executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
+
 
 ###########################################################################                     Run Chou & Fasman with input as protein sequences
 def run_choufasman_sequence():
@@ -307,6 +325,7 @@ def run_choufasman_sequence():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Chou-Fasman executed successfully for ' + str(swissprot[i]) + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Emini with input as Swiss-Prot ids
 def run_emini_swissprot():
@@ -363,6 +382,8 @@ def run_emini_swissprot():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Emini executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
+
 
 ###########################################################################                     Run Emini with input as protein sequences
 def run_emini_sequence():
@@ -418,6 +439,8 @@ def run_emini_sequence():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Emini executed successfully for Protein ' + str(swissprot[i]) + '-----------------\n\n')
+		time.sleep(5)
+
 
 ###########################################################################                     Run Karplus & Schulz with input as Swiss-Prot ids
 def run_karplusschulz_swissprot():
@@ -483,6 +506,7 @@ def run_karplusschulz_swissprot():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Karplus-Schulz executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Karplus-Schulz with input as protein sequences
 def run_karplusschulz_sequence():
@@ -497,6 +521,7 @@ def run_karplusschulz_sequence():
 		url = fronturl + data[i] + backurl
 		# print(url)
 		result = os.popen(url).read()
+		# print(len(result.splitlines()))
 		output_file_1 = detailed_output_file + swissprot[i] + '.tsv'
 		output_file_2 = output_file + swissprot[i] + '.tsv'
 		fp_write_1 = open(output_file_1,'w')
@@ -512,41 +537,50 @@ def run_karplusschulz_sequence():
 		del lines[0]
 		total = 0
 		count = 0
+		nop = 0
 		for j in range(0,len(lines)):
 			count = count + 1
 			ln = lines[j].replace('\n','')
 			tabs = ln.split('\t')
-			total = total + float(tabs[5])
-		threshold = total/count
-		# print(threshold)
-		position = []
-		residue = []
-		l = 1
-		flag = 0
-		for j in range(0, len(lines)):
-			ln = lines[j].replace('\n','')
-			tabs = ln.split('\t')
-			if (flag == 0) & ((float(tabs[5])) >=  threshold): 
-				flag = 1
-				position.append(tabs[0])
-				residue.append(tabs[1])
-			elif (flag == 1) & ((float(tabs[5])) >= threshold):
-				position.append(tabs[0])
-				residue.append(tabs[1])
-			elif (flag == 1) & ((float(tabs[5])) < threshold):
-				if (len(position) >= 7): # default window size
-					flag = 0
-					string = ''.join(residue)
-					fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
-					l = l + 1
-					position.clear()
-					residue.clear()
-				else:
-					flag = 0
-					position.clear()
-					residue.clear()
-		fp_write.close()
-		print('\n\n-------------------Karplus-Schulz executed successfully for ' + str(swissprot[i]) + '-----------------\n\n')
+			# print(len(tabs))
+			if len(tabs) > 2:
+				total = total + float(tabs[5])
+			else:
+				nop = 1
+		if (nop == 0):
+			threshold = total/count
+			# print(threshold)
+			position = []
+			residue = []
+			l = 1
+			flag = 0
+			for j in range(0, len(lines)):
+				ln = lines[j].replace('\n','')
+				tabs = ln.split('\t')
+				if (flag == 0) & ((float(tabs[5])) >=  threshold): 
+					flag = 1
+					position.append(tabs[0])
+					residue.append(tabs[1])
+				elif (flag == 1) & ((float(tabs[5])) >= threshold):
+					position.append(tabs[0])
+					residue.append(tabs[1])
+				elif (flag == 1) & ((float(tabs[5])) < threshold):
+					if (len(position) >= 7): # default window size
+						flag = 0
+						string = ''.join(residue)
+						fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+						l = l + 1
+						position.clear()
+						residue.clear()
+					else:
+						flag = 0
+						position.clear()
+						residue.clear()
+			fp_write.close()
+			print('\n\n-------------------Karplus-Schulz executed successfully for ' + str(swissprot[i]) + '-----------------\n\n')
+			time.sleep(5)
+		else:
+			print('\nNo output returned by Karplus-Schulz for ' + str(swissprot[i]) + '-----------------\n\n')
 
 ###########################################################################                     Run Kolaskar-Tongaonkar with input as Swiss-Prot ids
 def run_kolaskartongaonkar_swissprot():
@@ -612,6 +646,7 @@ def run_kolaskartongaonkar_swissprot():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Kolaskar-Tongaonkar executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Kolaskar-Tongaonkar with input as protein sequences
 def run_kolaskartongaonkar_sequence():
@@ -676,6 +711,7 @@ def run_kolaskartongaonkar_sequence():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Kolaskar-Tongaonkar executed successfully for ' + str(swissprot[i]) + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Parker with input as Swiss-Prot ids
 def run_parker_swissprot():
@@ -741,6 +777,7 @@ def run_parker_swissprot():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Parker executed successfully for ' + i + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Parker with input as protein sequences
 def run_parker_sequence():
@@ -776,7 +813,7 @@ def run_parker_sequence():
 			tabs = ln.split('\t')
 			total = total + float(tabs[5])
 		threshold = total/count
-		print(threshold)
+		# print(threshold)
 		position = []
 		residue = []
 		l = 1
@@ -805,6 +842,7 @@ def run_parker_sequence():
 					residue.clear()
 		fp_write.close()
 		print('\n\n-------------------Parker executed successfully for ' + str(swissprot[i]) + '-----------------\n\n')
+		time.sleep(5)
 
 ###########################################################################                     Run Discotope-1.1 with input as protein structures (pdb ids)
 def run_discotope1():
@@ -1568,3 +1606,66 @@ def run_conserved_sequences(file, folder):
 		run_kolaskartongaonkar_msa(swissprot,tabs,folder)
 		tabs.clear()
 	fp_read.close()
+
+###########################################################################                     Run MHC-I with input as protein sequences
+# def run_mhci():
+# 	swissprot, data = process_fasta('MHC-I')
+# 	allele, length = process_allele_length('MHC-I')
+# 	detailed_output_file = 'MHC-I/Detailed_'
+# 	# output_file = 'MHC-I/Output_'
+# 	# fronturl = 'curl --data "method=recommended&sequence_text='
+# 	# backurl = '" http://tools-cluster-interface.iedb.org/tools_api/mhci/'
+# 	# count = 1
+# 	# temporary_string = '&allele='
+# 	# for i in range(0, len(allele)):
+# 	# 	temporary_string = temporary_string + allele[i] + ','
+# 	# temporary_string = temporary_string[:-1]
+# 	# temporary_string = temporary_string + '&length='
+# 	# for i in range(0, len(length)):
+# 	# 	temporary_string = temporary_string + length[i] + ','
+# 	# temporary_string = temporary_string[:-1]
+# 	for i in range(0,len(data)):
+# 		print('\n\n-------------------Running MHC-I for Protein ' + str(swissprot[i]) + '-----------------\n\n')
+# 	# 	url = fronturl + data[i] + temporary_string + backurl
+# 	# 	# print(url)
+# 	# 	result = os.popen(url).read()
+# 		output_file_1 = detailed_output_file + swissprot[i] + '.tsv'
+# 		mhci_res = iedb.query_mhci_binding(method="recommended", sequence=data[i], allele="HLA-A*02:01", length=8)
+# 	# 	output_file_2 = output_file + swissprot[i] + '.tsv'
+# 		# fp_write_1 = open(output_file_1,'w')
+# 		mhci_res.to_csv(output_file_1, header=None, index=None, sep=' ', mode='a')
+		
+
+	
+
+
+
+	
+		# fp_write = open(output_file_2,'w')
+		# fp_write.write('Sl. No' + '\t' + 'Start position' + '\t' + 'End position' + '\t' + 'Epitope sequence' + '\t' + 'Length' + '\n')
+		# with open(output_file_1) as fp:
+		# 	lines = fp.readlines()
+		# position = []
+		# residue = []
+		# l = 0
+		# flag = 0
+		# for j in range(0, len(lines)):
+		# 	ln = lines[j].replace('\n','')
+		# 	tabs = ln.split('\t')
+		# 	if (flag == 0) & (tabs[3] == 'E'):
+		# 		flag = 1
+		# 		l = l + 1
+		# 		position.append(tabs[0])
+		# 		residue.append(tabs[1])
+		# 	elif (flag == 1) & (tabs[3] == 'E'):
+		# 		position.append(tabs[0])
+		# 		residue.append(tabs[1])
+		# 	elif (flag == 1) & (tabs[3] == '.'):
+		# 		flag = 0
+		# 		string = ''.join(residue)
+		# 		fp_write.write(str(l) + '\t' + str(position[0]) + '\t' + str(position[-1]) + '\t' + string + '\t' + str(len(position)) + '\n')
+		# 		position.clear()
+		# 		residue.clear()
+		# fp_write.close()
+		# print('\n\n-------------------MHC-I executed successfully for Protein ' + str(swissprot[i]) + '-----------------\n\n')
+		# count = count + 1
