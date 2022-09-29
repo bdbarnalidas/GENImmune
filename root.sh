@@ -73,6 +73,7 @@ function direct_prediction
             cp Bebipred/Input.txt ChouFasman/Input.txt
         else
             printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file ChouFasman/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
             printf 'Waiting for you to provide your inputs\n'
             sleep 5s
             printf 'Have you provided your inputs? Then please do the following:\n'
@@ -104,6 +105,7 @@ function direct_prediction
             cp Bebipred/Input.txt Emini/Input.txt
         else
             printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Emini/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
             printf 'Waiting for you to provide your inputs\n'
             sleep 5s
             printf 'Have you provided your inputs? Then please do the following:\n'
@@ -135,6 +137,7 @@ function direct_prediction
             cp Bebipred/Input.txt KarplusSchulz/Input.txt
         else
             printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KarplusSchulz/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
             printf 'Waiting for you to provide your inputs\n'
             sleep 5s
             printf 'Have you provided your inputs? Then please do the following:\n'
@@ -166,6 +169,7 @@ function direct_prediction
             cp Bebipred/Input.txt KolaskarTongaonkar/Input.txt
         else
             printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file KolaskarTongaonkar/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
             printf 'Waiting for you to provide your inputs\n'
             sleep 5s
             printf 'Have you provided your inputs? Then please do the following:\n'
@@ -197,6 +201,7 @@ function direct_prediction
             cp Bebipred/Input.txt Parker/Input.txt
         else
             printf 'Please type the Swiss-Prot IDs or the protein sequences in fasta format in the file Parker/Input.txt. In case of multiple entries, please place the ids and the sequences in separate lines without any blank lines in between them.\n'
+            printf 'Please note that, in case of protein sequences as input, the fasta header must start with >sp|x| (x can be anything).\n'
             printf 'Waiting for you to provide your inputs\n'
             sleep 5s
             printf 'Have you provided your inputs? Then please do the following:\n'
